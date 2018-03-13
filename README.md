@@ -1,4 +1,4 @@
-# Redirect Plugin for [Rawilum](http://fansoro.org/)
+# Redirect Plugin for [Rawilum](http://rawilum.org/)
 ![version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg?style=flat-square "Version")
 ![Rawilum](https://img.shields.io/badge/Rawilum-1.x-green.svg?style=flat-square "Fansoro Version")
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/pafnuty-fansoro-plugins/fansoro-plugin-breadcrumb/blob/master/LICENSE)
