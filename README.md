@@ -3,7 +3,7 @@
 ![Rawilum](https://img.shields.io/badge/Rawilum-1.x-green.svg?style=flat-square "Fansoro Version")
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/pafnuty-fansoro-plugins/fansoro-plugin-breadcrumb/blob/master/LICENSE)
 
-Simple redirect plugin for Rawilum. It allows you to create a redirects from your pages.
+Simple redirect plugin for Rawilum. It allows you to create a simple redirects for your pages.
 
 ## Install
 1. Unzip plugin to the folder `/site/plugins/`
