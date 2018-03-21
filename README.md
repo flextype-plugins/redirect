@@ -32,4 +32,4 @@ redirects:
 ```
 
 ## License
-[MIT](https://github.com/flextype-plugins/redirect/blob/master/LICENSE.txt)
+See [LICENSE](https://github.com/flextype-plugins/redirect/blob/master/LICENSE.txt)
