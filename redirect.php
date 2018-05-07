@@ -28,11 +28,15 @@ Event::addListener('onPageContentAfter', function () {
     //
     // Redirect to the custom urls on specific pages
     //
-    $redirects = Registry::get('site.redirects');
-    if (is_array($redirects) && count($redirects) > 0) {
-        foreach ($redirects as $old_url => $new_url) {
-            if (Http::getUriString() == $old_url) {
-                Http::redirect($new_url);
+    if (Registry::exists('site.redirects')) {
+
+        $redirects = Registry::get('site.redirects');
+
+        if (is_array($redirects) && count($redirects) > 0) {
+            foreach ($redirects as $old_url => $new_url) {
+                if (Http::getUriString() == $old_url) {
+                    Http::redirect($new_url);
+                }
             }
         }
     }

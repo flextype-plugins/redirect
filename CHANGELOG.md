@@ -1,3 +1,6 @@
+# v1.1.1, 2018-05-07
+* fix errors for several redirects
+
 # v1.1.0, 2018-05-07
 * Updates for Flextype 0.3.0
 
