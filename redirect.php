@@ -11,29 +11,28 @@
  * file that was distributed with this source code.
  */
 
-use Arr;
-use Request;
+use Flextype\Component\{Event\Event, Registry\Registry, Http\Http, Arr\Arr};
 
 //
 // Add listner for onPageContentAfter event
 //
-Events::addListener('onPageContentAfter', function () {
+Event::addListener('onPageContentAfter', function () {
 
     //
     // Search in frontmatter of the curent page element 'redirect'
     //
     if (Arr::keyExists(Pages::$page, 'redirect')) {
-        Request::redirect(Arr::get(Pages::$page, 'redirect'));
+        Http::redirect(Arr::get(Pages::$page, 'redirect'));
     }
 
     //
     // Redirect to the custom urls on specific pages
     //
-    $redirects = Config::get('site.redirects');
+    $redirects = Registry::get('site.redirects');
     if (is_array($redirects) && count($redirects) > 0) {
         foreach ($redirects as $old_url => $new_url) {
-            if (Url::getUriString() == $old_url) {
-                Request::redirect($new_url);
+            if (Http::getUriString() == $old_url) {
+                Http::redirect($new_url);
             }
         }
     }
