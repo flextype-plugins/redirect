@@ -21,8 +21,8 @@ Event::addListener('onPageContentAfter', function () {
     //
     // Search in frontmatter of the curent page element 'redirect'
     //
-    if (Arr::keyExists(Pages::$page, 'redirect')) {
-        Http::redirect(Arr::get(Pages::$page, 'redirect'));
+    if (Arr::keyExists(Content::getCurrentPage(), 'redirect')) {
+        Http::redirect(Arr::get(Content::getCurrentPage(), 'redirect'));
     }
 
     //
