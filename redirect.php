@@ -14,9 +14,9 @@
 use Flextype\Component\{Event\Event, Registry\Registry, Http\Http, Arr\Arr};
 
 //
-// Add listner for onPageContentAfter event
+// Add listner for onCurrentPageAfterProcessed event
 //
-Event::addListener('onPageContentAfter', function () {
+Event::addListener('onCurrentPageAfterProcessed', function () {
 
     //
     // Search in frontmatter of the curent page element 'redirect'
