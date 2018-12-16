@@ -1,3 +1,6 @@
+# v1.2.2, 2018-12-17
+* Updates for Flextype 0.7.4
+
 # v1.2.1, 2018-11-19
 * Updates for Flextype 0.7.0
 

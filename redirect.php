@@ -1,4 +1,6 @@
-<?php namespace Flextype;
+<?php
+
+namespace Flextype;
 
 /**
  *
@@ -11,7 +13,10 @@
  * file that was distributed with this source code.
  */
 
-use Flextype\Component\{Event\Event, Registry\Registry, Http\Http, Arr\Arr};
+use Flextype\Component\Event\Event;
+use Flextype\Component\Registry\Registry;
+use Flextype\Component\Http\Http;
+use Flextype\Component\Arr\Arr;
 
 //
 // Add listner for onCurrentPageAfterProcessed event
@@ -28,9 +33,8 @@ Event::addListener('onCurrentPageAfterProcessed', function () {
     //
     // Redirect to the custom urls on specific pages
     //
-    if (Registry::exists('site.redirects')) {
-
-        $redirects = Registry::get('site.redirects');
+    if (Registry::exists('settings.redirects')) {
+        $redirects = Registry::get('settings.redirects');
 
         if (is_array($redirects) && count($redirects) > 0) {
             foreach ($redirects as $old_url => $new_url) {
@@ -40,5 +44,4 @@ Event::addListener('onCurrentPageAfterProcessed', function () {
             }
         }
     }
-
 });
