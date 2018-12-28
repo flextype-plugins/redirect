@@ -21,13 +21,13 @@ use Flextype\Component\Arr\Arr;
 //
 // Add listner for onCurrentPageAfterProcessed event
 //
-Event::addListener('onCurrentPageAfterProcessed', function () {
+Event::addListener('onCurrentEntryAfterProcessed', function () {
 
     //
-    // Search in frontmatter of the curent page element 'redirect'
+    // Search in frontmatter of the curent entry element 'redirect'
     //
-    if (Arr::keyExists(Content::getCurrentPage(), 'redirect')) {
-        Http::redirect(Arr::get(Content::getCurrentPage(), 'redirect'));
+    if (Arr::keyExists(Entries::getCurrentEntry(), 'redirect')) {
+        Http::redirect(Arr::get(Entries::getCurrentEntry(), 'redirect'));
     }
 
     //
