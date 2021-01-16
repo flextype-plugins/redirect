@@ -11,5 +11,6 @@ license: MIT
 icon:
   name: directions
   set: "fontawesome|solid"
+  
 dependencies:
   flextype: 0.9.16
