@@ -1,3 +1,6 @@
+# v2.0.0, 2021-01-16
+* Total plugin rewrite.
+
 # v1.3.0, 2018-12-17
 * Updates for Flextype 0.8.0
 

@@ -1,26 +1,52 @@
-# Redirect Plugin for [Flextype](http://flextype.org/)
-![version](https://img.shields.io/badge/version-1.3.0-brightgreen.svg?style=flat-square "Version")
-![Flexttype](https://img.shields.io/badge/Flextype-0.8.0-green.svg?style=flat-square "Flextype Version")
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/flextype-plugins/redirect/blob/master/LICENSE.txt)
+<h1 align="center">Redirect Plugin for <a href="https://flextype.org/">Flextype</a></h1>
 
-Simple redirect plugin for Flextype. It allows you to create a simple redirects for your pages.
+<p align="center">
+<a href="https://github.com/flextype-plugins/redirect/releases"><img alt="Version" src="https://img.shields.io/github/release/flextype-plugins/redirect.svg?label=version&color=black"></a> <a href="https://github.com/flextype-plugins/redirect"><img src="https://img.shields.io/badge/license-MIT-blue.svg?color=black" alt="License"></a> <a href="https://github.com/flextype-plugins/redirect"><img src="https://img.shields.io/github/downloads/flextype-plugins/redirect/total.svg?color=black" alt="Total downloads"></a> <a href="https://github.com/flextype/flextype"><img src="https://img.shields.io/badge/Flextype-0.9.16-green.svg?color=black" alt="Flextype"></a> <a href=""><img src="https://img.shields.io/discord/423097982498635778.svg?logo=discord&color=black&label=Discord%20Chat" alt="Discord"></a>
+</p>
+
+Redirect plugin will help you to know how many readers of every page in your website.
+
+## Dependencies
+
+The following dependencies need to be installed for Redirect Plugin.
+
+| Item | Version | Download |
+|---|---|---|
+| [flextype](https://github.com/flextype/flextype) | 0.9.16 | [download](https://github.com/flextype/flextype/releases) |
+| [twig](https://github.com/flextype-plugins/twig) | >=2.0.0 | [download](https://github.com/flextype-plugins/twig/releases) |
 
 ## Installation
-Unzip plugin to the folder `/site/plugins/`
 
-## Usage in the pages
-You can simple add new redirect in the frontmatter of your page
-```
-redirect: new-page
+1. Download & Install all required dependencies.
+2. Create new folder `/project/plugins/redirect`
+3. Download Redirect Plugin and unzip plugin content to the folder `/project/plugins/redirect`
+
+## Settings
+
+| Key | Value | Description |
+|---|---|---|
+| enabled | true | true or false to disable the plugin |
+| priority | 100 | Redirect plugin priority |
+| redirect | [] | Redirect specific data |
+
+### Usage
+
+You may define unlimited redirects in `project/config/plugins/redirect/settings.yaml`
+
+Here is basic example of simple redirects:
+
+```yaml
+redirect:
+  -
+    from: '/home'
+    to: './'
+    status: 301
+  -
+    from: '/'
+    to: './en'
+    status: 301
 ```
 
-## Create several redirects
-This plugins allows you to setup several redirects, just go to the `/site/config/site.yaml` and create section with your redirects.
-```
-redirects:
-  old-page: new-page
-  another-old-page: http://www.flextype.org
-```
-
-## License
-See [LICENSE](https://github.com/flextype-plugins/redirect/blob/master/LICENSE.txt)
+## LICENSE
+[The MIT License (MIT)](https://github.com/flextype-plugins/redirect/blob/master/LICENSE.txt)
+Copyright (c) 2021 [Sergey Romanenko](https://github.com/Awilum)
