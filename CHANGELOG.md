@@ -1,3 +1,6 @@
+# v2.0.1, 2021-01-16
+* fix issue with declare(strict_types=1)
+
 # v2.0.0, 2021-01-16
 * Total plugin rewrite.
 

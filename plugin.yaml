@@ -1,5 +1,5 @@
 name: Redirect
-version: 2.0.0
+version: 2.0.1
 description: Simple redirect plugin for Flextype.
 author:
   name: Sergey Romanenko
@@ -11,6 +11,6 @@ license: MIT
 icon:
   name: directions
   set: "fontawesome|solid"
-  
+
 dependencies:
   flextype: 0.9.16
