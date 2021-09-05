@@ -9,8 +9,8 @@ homepage: https://github.com/flextype-plugins/redirect
 bugs: https://github.com/flextype-plugins/redirect/issues
 license: MIT
 icon:
-  name: directions
-  set: "fontawesome|solid"
+  name: box-arrow-in-down-right
+  set: bootstrap
 
 dependencies:
   flextype: 0.9.16
